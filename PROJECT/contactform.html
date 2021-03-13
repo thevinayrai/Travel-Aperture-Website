@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html>
+<head>
+<title>SIGNUP FORM</title>
+<style>
+#para
+{
+ color:red;
+}
+address { 
+ color:#fff;
+ text-align:left;
+  display: block;
+  font-style: italic;
+  }
+body{ 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image:url("bgrn.jpg");
+    background-size: cover;
+    font-family:century gothic;
+
+}
+
+.title{
+   margin-top: 100px;
+   color: #fff;  
+   }
+
+.title h1{
+font-size: 32px;
+line-height: 10px;
+}
+
+.title h2{
+font-size: 16px;
+}
+
+form{
+margin-top: 50px;
+}
+
+.form-control{
+width:600px;
+background:transparent;
+border:none;
+outline:none;
+border-bottom:1px solid gray;
+color: #fff;
+font-size:18px;
+margin-bottom:16px;
+}
+.form-control{
+height:45px;
+}
+
+
+form .submit{
+background-color: #ff5722;
+border-color: transparent;
+color: #fff;;
+font-size: 20px;
+letter-spacing: 2px;
+height: 50px;
+margin-top: 20px;
+transition: 0.4s ease;
+
+}
+
+form .submit:hover{
+background-color: #f44336;
+cursor: pointer;
+
+}
+strong
+{
+ color:white;
+}
+
+
+
+</style>
+<script type="text/javascript">
+function validation()
+   {
+    var name=document.myform.name.value;  
+	var password=document.myform.password.value; 
+	var age=document.myform.Age.value;
+	var email=document.myform.email.value;
+	var no=document.myform.number.value;
+    var message=document.myform.message.value;
+  	if (name==null || name==""){  
+	alert("Name can't be blank");  
+	return false;  
+	}
+	else if (email==null || email==""){  
+	alert("Email can't be blank");  
+	return false;
+	}
+	else if(password.length<6){  
+	alert("Password can't be blank and it must be at least 6 characters long.");  
+	return false;  
+	}
+	else if (no==null || no==""){  
+	alert("Contact number can't be blank");  
+	return false;  
+	}
+	else if (no.length!=10){  
+	alert("Contact number must be of 10 digits");  
+	return false;  
+	}
+	else if (age==null || age==""){  
+	alert("Age can't be blank");  
+	return false;  
+	}
+    else if (msg==null || msg==""){  
+	alert(" Please write a messsage");  
+	return false;
+	}
+	else if(!document.getElementById("accept").checked)
+	{
+	  alert("Please accept the terms and conditions");
+	}
+	else{	
+     alert("Thanks for Regestering yourself . Now you can choose your prefered Destination");
+	 document.myform.reset();}
+   }
+   </script>
+   </head>
+
+
+<body>
+   <div class="title">
+     <h1 style= "color:black";><u>SIGN UP FORM</u></h1><br>
+     <h2 style="color:red";> <b><em>Please Fill the Following Form to Register Yourself</b></em></h2>
+   </div>
+
+
+<div class="box">
+<form name="myform">
+   <input type="text" name="name" class="form-control" placeholder="Enter Your Name" required><br>    
+   <input type="email" name="email" class="form-control" placeholder="Enter Your Email" required><br>
+   <input type=""password" name="password" class="form-control" placeholder="Password" required><br>
+   <input type="digit" name="number" class="form-control" placeholder="Contact" required><br>
+   <input type="number" name="Age" class="form-control" placeholder="Age" required><br>   
+   <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+   <input type="checkbox" name="check" checked="checked"/><strong>Information given by me is truly correct.In case of any discrepency legal actions can be taken against me.</strong>
+   <br><br><input type = "radio" id= "accept" required><strong>I accept terms and conditions*</strong>
+   <br>
+   <input type="button" name="" class="form-control submit" value="REGISTER" onclick="validation()">
+   <p id="para" ></p>
+   
+</form>
+</div>
+
+ <div class="box">	`
+ </div>
+</body>
+</html>

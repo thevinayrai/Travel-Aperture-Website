@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-image:url(oo.jpg);
+background-size:cover;
+}
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submit {background-color: #4CAF50;} /* Green */
+.submit:hover {background-color: #46a049;}
+
+.reset {background-color: #f44336;} /* Red */ 
+.reset:hover {background: #da190b;}
+
+
+</style>
+<body>
+
+<marquee class><h2>Booking Details</h2></marquee>
+<form>
+
+<fieldset>
+<h2>Please fill in the following details:</h2>
+
+First name:<br>
+<input type = "text" name = "first name" placeholder="First Name">
+
+<br>
+
+Last name:<br>
+<input type = "text" name = "Last name" placeholder="Last Name">
+
+<br>
+
+Email Id:<br>
+<input type = "email" name = "emailaddress" placeholder="Enter your Email Id">
+
+<br>
+User Id:<br>
+<input type="text" name="user id" placeholder="Enter your User Id">
+<br>
+Password:<br>
+<input type = "password" Password = "Password" placeholder="Enter your User Id Password">
+
+<br>
+DOB:<br>
+<input type = "date" DOB = "Date">
+
+<br>
+No. of Tourist:<br>
+<input type="number" name="No. of tourist">
+
+<br><br>
+Journey Destinations:<br>
+<input type="radio" name="journey destinations" value="Switzerland" checked>Switzerland
+<input type="radio" name="journey destinations" value="Brazil">Brazil
+<input type="radio" name="journey destinations" value="Sweden">Sweden
+<input type="radio" name="journey destinations" value="Germany">Germany
+<input type="radio" name="journey destinations" value="Australia">Australia
+<input type="radio" name="journey destinations" value="Thiland">Thiland
+<input type="radio" name="journey destinations" value="England">England
+<input type="radio" name="journey destinations" value="France">France
+<input type="radio" name="journey destinations" value="Singapore">Singapore
+<input type="radio" name="journey destinations" value="South Africa">South Africa
+<br> <br>
+Gender:<br>
+<input type = "radio" name =  "gender" value = "male" checked>Male
+<input type = "radio" name =  "gender" value = "female">Female
+<input type = "radio" name =  "gender" value = "other">Other
+<br><br>
+Tourism Package:<br>
+<input type = "radio" name ="Tourism Package" value="More than a Week">More than a Week
+<input type = "radio" name ="Tourism Package" value="1 Week" checked>1 Week
+<input type = "radio" name ="Tourism Package" value="6 Days and 5 Nights">6 Days and 5 Nights
+<input type = "radio" name ="Tourism Package" value="5 Days and 4 Nights" checked>5 Days and 4 Nights
+<input type = "radio" name ="Tourism Package" value="4 Days and 3 Nights">4 Days and 3 Nights
+<input type = "radio" name ="Tourism Package" value="3 Days and 2 Nights">3 Days and 2 Nights
+<input type = "radio" name ="Tourism Package" value="2 Days and 1 Nights">2 Days and 1 Nights
+<br><br>
+Language Spoken:<br> 
+<input type = "checkbox" Language Spoken = "English">English   
+<input type = "checkbox" Language Spoken = "Hindi">Hndi
+<input type = "checkbox" Language Spoken = "Other">Other
+
+<br><br>
+<input type = "submit" onclick = "alert('Do you wish to continue!')" value = "Proceed to Pay" <button class="btn submit"</button> 
+
+<input type = "reset" onclick = "alert('Data will be reset to its default.Do you wish to continue?')" value = "Reset" <button class="btn reset"</button>
+
+
+</fieldset>
+
+</form>
+</body>
+</html>
